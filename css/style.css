@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: burlywood;
+  margin: 0;
+}
+.container {
+  width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo,
+.header_contact,
+.descriptor,
+.nav_header {
+  width: 50%;
+}
+.header_contact {
+  display: flex;
+}
+.contact {
+  display: flex;
+}
+.logo {
+  width: 155px;
+  height: 46px;
+}
+.facebook {
+  width: 24px;
+  height: 24px;
+}
+.contact li {
+  margin-left: 20px;
+}
+.lang {
+  text-decoration: none;
+  padding: 5px;
+}
