@@ -4,6 +4,7 @@
 body {
   background: burlywood;
   margin: 0;
+  color: #ffffff;
 }
 .container {
   width: 1320px;
@@ -13,20 +14,11 @@ body {
 .header {
   padding-top: 50px;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.logo,
-.header_contact,
-.descriptor,
-.nav_header {
-  width: 50%;
-}
-.header_contact {
-  display: flex;
 }
 .contact {
   display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .logo {
   width: 155px;
@@ -36,10 +28,26 @@ body {
   width: 24px;
   height: 24px;
 }
-.contact li {
-  margin-left: 20px;
+.contact li:not(:last-child) {
+  margin-right: 20px;
 }
 .lang {
   text-decoration: none;
   padding: 5px;
+}
+.minilogo,
+.header_contact {
+  width: 50%;
+}
+.header_contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: center;
+}
+.descriptor {
+  margin-top: 0;
+}
+.nav_header a:not(:last-child) {
+  margin-right: 15px;
 }
